@@ -1,0 +1,19 @@
+{
+  "name": "atlas-mockup",
+  "version": "0.0.1",
+  "authors": [
+    "Nathaniel Chen <nathanielchen1@gmail.com>"
+  ],
+  "description": "A simple mockup for a responsive Atlas application.",
+  "main": "[atlas-mockup.html, test-styles.css]",
+  "keywords": [
+    "atlas"
+  ],
+  "license": "none",
+  "dependencies": {
+    "Flowtype.js": "~1.1.0",
+    "chartist": "~0.9.0",
+    "ios7-switches": "brielov/ios7-switches#~1.0.0",
+    "jquery": "~2.1.4"
+  }
+}

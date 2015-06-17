@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chartist Test App</title>
+        <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+        <link rel="stylesheet" href="bower_components/ios7-switches/dist/css/ios7-switches.css">
+        <link rel="stylesheet" href="test_styles.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/Flowtype.js/flowtype.js"></script>
+    </head>
+    <body>
+        <div id="row1" class="wrapper">
+            <div class="ct-perfect-fourth two-per-row" id="chart1"></div>
+            <div class="ct-perfect-fourth two-per-row" id="chart2"></div>
+        </div>
+        <div id="row2" class="wrapper">
+            <div class="two-per-row" id="switches">
+                <div class="switch">
+                    <input type="checkbox" id="switch1" />
+                    <label for="switch1"></label>
+                </div>
+                <div class="switch switch-info">
+                    <input type="checkbox" id="switch2" />
+                    <label for="switch2"></label>
+                </div>
+                <div class="switch switch-warning">
+                    <input type="checkbox" id="switch3" />
+                    <label for="switch3"></label>
+                </div>
+                <div class="switch switch-danger">
+                    <input type="checkbox" id="switch4" />
+                    <label for="switch4"></label>
+                </div>
+            </div>
+            <div class="two-per-row" id="textwidget1">
+                <h1>It is 25 degrees celsius</h1>
+            </div>
+        </div>
+
+        <script src="bower_components/chartist/dist/chartist.min.js"></script>
+        <script type="text/javascript">
+            new Chartist.Pie('#chart1', {
+                series: [10, 90]
+            }, {
+                donut: true,
+                donutWidth: 40,
+                startAngle: 270,
+                total:200,
+                showLabel: false
+           });
+
+           new Chartist.Line('#chart2', {
+               labels: ['1','2','3','4','5','6'],
+               series: [
+                   [1,3,5,7,3,4]
+               ]
+           }, {
+               fullWidth: true,
+               chartPadding: {
+                   right: 10
+               }
+           });
+
+           $('body').flowtype({
+               minimum: 500,
+               maximum: 1200
+           });
+        </script>
+    </body>
+</html>
