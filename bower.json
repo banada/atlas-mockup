@@ -13,7 +13,7 @@
   "dependencies": {
     "Flowtype.js": "~1.1.0",
     "chartist": "~0.9.0",
-    "ios7-switches": "brielov/ios7-switches#~1.0.0",
+    "ios7-switches": "banada/ios7-switches",
     "jquery": "~2.1.4"
   }
 }
